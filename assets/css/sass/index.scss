@@ -142,7 +142,9 @@ body {
   }
 
   #right {
+    padding: 0px;
     position: absolute;
+    width: 100%;
     top: calc(60% + 120px);
     flex: 1 0 auto;
     align-items: center;
@@ -150,10 +152,11 @@ body {
     height: calc(40% - 20px);
 
     .info {
+      align-items: center;
+      text-align: center;
       position: relative;
       margin-top: 50px;
       max-height: 100%;
-      width: auto;
       padding-bottom: 50px;
     }
   }
