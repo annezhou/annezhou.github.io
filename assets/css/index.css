@@ -1,0 +1,109 @@
+/* taken from http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ */
+/* set rem font size with pixel fallback */
+/* breakpoints */
+/* animations and keyframes */
+/* transitions */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,800);
+/* variables */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+html, .viewport {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fff; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex: 1;
+  height: 100%;
+  justify-content: center; }
+
+#left, #right {
+  flex: 1 0 0;
+  height: 100%; }
+
+#left {
+  background-color: #2E4057;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+  #left img {
+    width: auto; }
+  #left a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 256px;
+    padding: 5px 0px;
+    text-align: center;
+    margin-top: 10px;
+    color: #2E4057;
+    background-color: #fff; }
+  #left a:hover {
+    background-color: #628395; }
+
+#right {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: #2E4057;
+  padding: 0px 50px; }
+  #right #name {
+    font-weight: 800;
+    font-size: 36px;
+    font-size: 2.25rem; }
+  #right p {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  #right a {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    color: #628395;
+    -webkit-transition: color 0.8s ease;
+    -moz-transition: color 0.8s ease;
+    -ms-transition: color 0.8s ease;
+    -o-transition: color 0.8s ease;
+    transition: color 0.8s ease; }
+  #right a:hover {
+    color: #2E4057;
+    -webkit-transition: color 0.8s ease;
+    -moz-transition: color 0.8s ease;
+    -ms-transition: color 0.8s ease;
+    -o-transition: color 0.8s ease;
+    transition: color 0.8s ease; }
+  #right .button {
+    margin-top: 10px; }
+    #right .button a {
+      background-color: #628395;
+      font-style: normal;
+      padding: 5px 15px;
+      color: #fff; }
+
+/*# sourceMappingURL=index.css.map */
