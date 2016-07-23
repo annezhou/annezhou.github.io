@@ -120,3 +120,19 @@ body {
     }
   }
 }
+
+@media (max-width:800px) {
+  .container {
+      -webkit-flex-flow: column nowrap;
+  }
+
+  #left {
+    padding: 150px;
+  }
+
+  #right {
+    align-items: center;
+    text-align: center;
+  }
+
+}
