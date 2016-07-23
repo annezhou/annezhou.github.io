@@ -107,11 +107,22 @@ body {
       color: #fff; }
 
 @media (max-width: 800px) {
+  body {
+    max-height: 100%;
+    max-width: 100%; }
+
   .container {
-    -webkit-flex-flow: column nowrap; }
+    -webkit-flex-flow: column nowrap;
+    max-width: 100%;
+    max-height: 100%; }
 
   #left {
-    padding: 150px; }
+    padding: 100px;
+    justify-content: center;
+    align-items: center; }
+    #left img {
+      max-width: 100%;
+      height: auto; }
 
   #right {
     align-items: center;
